@@ -1,0 +1,82 @@
+body {
+    font-family: 'Bubbler One', sans-serif;
+    background-color: #232323;
+    margin: 0 auto;
+}
+
+h1 {
+    text-align: center;
+    color: white;
+    /*get rid of margins all around*/
+    margin: 0 auto; 
+    background-color: steelblue;
+    text-transform: uppercase;
+    line-height: 1.1;
+    padding: 20px 0;
+}
+
+.square {
+    width: 30%;
+    background: white;
+    /*can also use padding-top*/
+    padding-bottom: 30%; 
+    float: left;
+    margin: 1.66%;
+    border-radius: 15%;
+    transition: background-color 0.5s;
+    /*to have more browser support*/
+    -webkit-transition: background-color 0.6s; 
+    /*to have more browser support*/
+    -moz-transition: background-color 0.6s; 
+}
+
+#container {
+    margin: 20px auto;
+    max-width: 700px;
+    /*when window gets smaller this is in effect */
+    width: 80%; 
+}
+
+#stripe {
+    background-color: white;
+    height: 30px;
+    text-align: center;
+    color: black;
+}
+
+/*define a class to toggle selected or not for on easy or hard*/
+.selected { 
+    background-color: steelblue;
+    color: white;
+}
+
+/*button selector */
+button { 
+    border: none;
+    background: none;
+    font-family: 'Bubbler One', sans-serif;
+    text-transform: uppercase;
+    /*100% of the containing element */
+    height: 100%; 
+    font-weight: 700;
+    color: steelblue;
+    letter-spacing: 1px;
+    font-size: inherit;
+    transition: all 0.3s;
+    /*to have more browser support*/
+    -webkit-transition: all 0.3s; 
+    /*to have more browser support*/
+    -moz-transition: all 0.3s; 
+    outline: none;
+}
+
+#message {
+    display: inline-block;
+    width: 35%;
+}
+
+/*when hovering over the button */
+button:hover { 
+    color: white;
+    background-color: steelblue;
+}
